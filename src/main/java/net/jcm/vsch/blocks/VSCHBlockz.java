@@ -2,6 +2,7 @@ package net.jcm.vsch.blocks;
 
 import java.util.function.Supplier;
 
+import com.simibubi.create.content.decoration.encasing.CasingBlock;
 import net.jcm.vsch.VSCHMod;
 
 import net.jcm.vsch.blocks.custom.*;
@@ -17,7 +18,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class VSCHBlocks {
+public class VSCHBlockz {
 	public static final DeferredRegister<Block> BLOCKS =
 			DeferredRegister.create(ForgeRegistries.BLOCKS, VSCHMod.MODID); //this when registering a block doesnt make an item!
 
@@ -52,11 +53,21 @@ public class VSCHBlocks {
 					.strength(5f)
 					.noOcclusion()));
 
-	/*public static final RegistryObject<Block> MAGNET_BLOCK = registerBlock("magnet_block",
+	public static final RegistryObject<Block> MAGNET_BLOCK = registerBlock("magnet_block",
 			() -> new MagnetBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.COPPER)
 					.strength(5f)
-					.noOcclusion()));*/
+					.noOcclusion()));
 
+
+	public static final RegistryObject<Block> VIGORITE_CASING = registerBlock("vigorite_casing",
+			() -> new CasingBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.COPPER)
+					.strength(5f)
+					.noOcclusion()));
+
+//	public static final RegistryObject<Block> VIGORITE_ALLOY_BLOCK = registerBlock("vigorite_alloy_block",
+//			() -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.COPPER)
+//					.strength(5f)
+//					.noOcclusion()));
 
 	//below is just tools used in adding the block
 	private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

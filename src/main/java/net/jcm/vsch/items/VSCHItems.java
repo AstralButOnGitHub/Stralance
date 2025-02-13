@@ -16,8 +16,10 @@ public class VSCHItems {
 	public static final DeferredRegister<Item> ITEMS =
 			DeferredRegister.create(ForgeRegistries.ITEMS, VSCHMod.MODID); //this bit does some mumbo-jumbo to set up for adding items
 
+	public static final RegistryObject<Item> VIGORITE_ALLOY = ITEMS.register("vigorite_alloy",
+			() -> new Item(new Item.Properties()));
 
-	public static final RegistryObject<Item> WRENCH = ITEMS.register("wrench", 
+	public static final RegistryObject<Item> WRENCH = ITEMS.register("vigorite_wrench",
 			() -> new WrenchItem(new Item.Properties()));
 
 	public static final RegistryObject<Item> MAGNET_BOOT = ITEMS.register("magnet_boot",

@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "create:sturdy_sheet"
+    },
+    {
+      "item": "create:cinder_flour"
+    }
+  ],
+
+  "results": [
+    {
+      "count": 2,
+      "item": "vsch:vigorite_alloy"
+    }
+  ]
+}

@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=east": {
+      "model": "vsch:block/drag_inducer_block",
+      "y": 90
+    },
+    "facing=north": {
       "model": "vsch:block/drag_inducer_block"
+    },
+    "facing=south": {
+      "model": "vsch:block/drag_inducer_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vsch:block/drag_inducer_block",
+      "y": 270
     }
   }
 }

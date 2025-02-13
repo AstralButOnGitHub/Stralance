@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "vsch:vigorite_alloy_block"
+    },
+    {
+      "item": "vsch:cerisite_plating"
+    }
+  ],
+  "results": [
+    {
+      "item": "vsch:cerisite_casing"
+    }
+  ]
+}

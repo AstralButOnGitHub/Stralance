@@ -6,12 +6,15 @@
 	"vsch.position": " §ePOSITION",
 	"vsch.error.thruster_modes_disabled": "Thruster mode toggling is disabled!",
 	"vsch.error.thruster_not_on_ship": "Thruster not on a ship",
-	"block.vsch.thruster_block": "Thruster",
-	"block.vsch.drag_inducer_block": "Drag inducer",
-	"block.vsch.air_thruster_block": "Air thruster",
-	"block.vsch.powerful_thruster_block": "Powerful thruster",
-	"item.vsch.wrench": "Wrench",
+
+	"block.vsch.air_thruster_block": "Small Thruster",
+	"block.vsch.thruster_block": "Medium Thruster",
+	"block.vsch.powerful_thruster_block": "Large Thruster",
+
+	"block.vsch.drag_inducer_block": "Drag Inducer",
+	"item.vsch.vigorite_wrench": "Vigorite Wrench",
 	"item.vsch.magnet_boot": "Magnet Boots",
+
 	"config.jade.plugin_vsch.thruster_component_config": "Thruster Mode Details",
 	"vsch.ponder.thrusters.header": "Thrusters",
 	"vsch.ponder.thrusters.text_1": "Thrusters need to be powered with redstone to thrust",

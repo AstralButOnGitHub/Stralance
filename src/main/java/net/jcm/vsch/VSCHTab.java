@@ -1,6 +1,6 @@
 package net.jcm.vsch;
 
-import net.jcm.vsch.blocks.VSCHBlocks;
+import net.jcm.vsch.blocks.VSCHBlockz;
 import net.jcm.vsch.items.VSCHItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -13,15 +13,20 @@ import net.minecraftforge.registries.RegistryObject;
 public class VSCHTab {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, VSCHMod.MODID);
 	public static final RegistryObject<CreativeModeTab> TAB = REGISTRY.register("starlance",
-			() -> CreativeModeTab.builder().title(Component.translatable("vsch.itemtab")).icon(() -> new ItemStack(VSCHBlocks.THRUSTER_BLOCK.get())).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("vsch.itemtab")).icon(() -> new ItemStack(VSCHBlockz.THRUSTER_BLOCK.get())).displayItems((parameters, tabData) -> {
 
-				tabData.accept(VSCHBlocks.THRUSTER_BLOCK.get().asItem());
-				tabData.accept(VSCHBlocks.AIR_THRUSTER_BLOCK.get().asItem());
-				tabData.accept(VSCHBlocks.POWERFUL_THRUSTER_BLOCK.get().asItem());
-				tabData.accept(VSCHBlocks.DRAG_INDUCER_BLOCK.get().asItem());
 
+
+				tabData.accept(VSCHBlockz.AIR_THRUSTER_BLOCK.get().asItem());
+				tabData.accept(VSCHBlockz.THRUSTER_BLOCK.get().asItem());
+				tabData.accept(VSCHBlockz.POWERFUL_THRUSTER_BLOCK.get().asItem());
+				tabData.accept(VSCHBlockz.DRAG_INDUCER_BLOCK.get().asItem());
+
+				tabData.accept(VSCHBlockz.MAGNET_BLOCK.get().asItem());
 				tabData.accept(VSCHItems.MAGNET_BOOT.get().asItem());
 
+				tabData.accept(VSCHBlockz.VIGORITE_CASING.get().asItem());
+				tabData.accept(VSCHItems.VIGORITE_ALLOY.get().asItem());
 				tabData.accept(VSCHItems.WRENCH.get().asItem());
 
 			}).build());

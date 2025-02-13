@@ -15,6 +15,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DirectionalBlock;
@@ -23,6 +24,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
+
+import static net.minecraft.world.level.block.state.properties.BlockStateProperties.HORIZONTAL_FACING;
 
 public class DragInducerBlockEntity extends BlockEntity implements ParticleBlockEntity {
 	private final DraggerData draggerData;
@@ -69,6 +72,7 @@ public class DragInducerBlockEntity extends BlockEntity implements ParticleBlock
 	public DraggerData getDraggerData() {
 		return this.draggerData;
 	}
+
 
 	@Override
 	public void load(CompoundTag data) {

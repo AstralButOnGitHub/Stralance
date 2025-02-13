@@ -1,6 +1,6 @@
 package net.jcm.vsch;
 
-import net.jcm.vsch.blocks.VSCHBlocks;
+import net.jcm.vsch.blocks.VSCHBlockz;
 import net.jcm.vsch.blocks.entity.VSCHBlockEntities;
 import net.jcm.vsch.commands.ModCommands;
 import net.jcm.vsch.compat.CompatMods;
@@ -11,11 +11,9 @@ import net.jcm.vsch.config.VSCHConfig;
 import net.jcm.vsch.entity.VSCHEntities;
 import net.jcm.vsch.event.GravityInducer;
 import net.jcm.vsch.items.VSCHItems;
-import net.minecraft.client.renderer.entity.NoopRenderer;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -39,7 +37,7 @@ public class VSCHMod {
 		IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
 		//BLOCKS.register(modBus);
 		VSCHItems.register(modBus);
-		VSCHBlocks.register(modBus);
+		VSCHBlockz.register(modBus);
 		VSCHBlockEntities.register(modBus);
 		VSCHConfig.register(ModLoadingContext.get());
 		VSCHTab.register(modBus);

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "tag": "cosmos:steel_ingot"
+    },
+    "V": {
+      "tag": "vsch:vigorite_alloy"
+    }
+
+  },
+  "pattern": [
+    " S ",
+    " VS",
+    "S  "
+  ],
+  "result": {
+    "item": "vsch:vigorite_wrench"
+  },
+  "show_notification": true
+}

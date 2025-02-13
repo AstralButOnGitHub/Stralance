@@ -64,7 +64,7 @@ public class MagnetBlock extends BlockWithEntity<MagnetBlockEntity> {
 		// I guess VS does this automatically when switching a shipyards dimension?
 		VSCHForceInducedShips ships = VSCHForceInducedShips.get(level, pos);
 		if (ships != null) {
-			//ships.removeDragger(pos);
+			ships.removeDragger(pos);
 		}
 	}
 

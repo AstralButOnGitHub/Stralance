@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "": {
+      "model": "vsch:block/vigorite_casing_noathena"
+    }
+  },
+
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "vsch:block/vigorite_casing/corners",
+    "empty": "vsch:block/vigorite_casing/empty",
+    "horizontal": "vsch:block/vigorite_casing/horizontal",
+    "particle": "vsch:block/vigorite_casing/all",
+    "vertical": "vsch:block/vigorite_casing/vertical"
+  }
+}
