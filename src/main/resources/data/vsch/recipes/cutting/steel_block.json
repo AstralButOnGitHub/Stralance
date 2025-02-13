@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 3,
+  "ingredient": {
+    "item": "cosmos:steel_ingot"
+  },
+  "result": "cosmos:steel_block"
+}
