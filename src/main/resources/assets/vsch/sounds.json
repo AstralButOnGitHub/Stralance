@@ -1,0 +1,10 @@
+{
+  "wrench": {
+    "sounds": [
+      "vsch:item/wrench/wrench1",
+      "vsch:item/wrench/wrench2",
+      "vsch:item/wrench/wrench3",
+      "vsch:item/wrench/wrench4"
+    ]
+  }
+}

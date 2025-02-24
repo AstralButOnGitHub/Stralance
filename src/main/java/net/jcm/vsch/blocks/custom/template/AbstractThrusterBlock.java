@@ -1,5 +1,9 @@
 package net.jcm.vsch.blocks.custom.template;
 
+import net.jcm.vsch.items.VSCHSounds;
+import net.lointain.cosmos.init.CosmosModSounds;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import org.valkyrienskies.mod.common.util.VectorConversionsMCKt;
 
 import net.jcm.vsch.blocks.entity.template.AbstractThrusterBlockEntity;
@@ -114,6 +118,7 @@ public abstract class AbstractThrusterBlock<T extends AbstractThrusterBlockEntit
 
 		// If thrusters can be toggled
 		if (!VSCHConfig.THRUSTER_TOGGLE.get()) {
+
 			player.displayClientMessage(Component.translatable("vsch.error.thruster_modes_disabled").withStyle(
 					ChatFormatting.RED
 			), true);
@@ -148,10 +153,19 @@ public abstract class AbstractThrusterBlock<T extends AbstractThrusterBlockEntit
 		// And set the thruster data to the new toggled property
 		thruster.setThrusterMode(blockMode);
 
-		//Send a chat message to them. The wrench class will handle the actionbar
-		player.sendSystemMessage(Component.translatable("vsch.message.toggle").append(Component.translatable("vsch."+blockMode.toString().toLowerCase())));
 
-		return InteractionResult.CONSUME;
+		// CONFIG MOMENT
+		if (VSCHConfig.WRENCH_SOUND.get()) {
+			level.playSound(null, pos, VSCHSounds.WRENCH.get(), SoundSource.BLOCKS, 0.25F, 1.0F);
+		}
+
+		//Send a chat message to them. The wrench class will handle the actionbar
+		if (VSCHConfig.WRENCH_MESSAGE.get()) {
+			player.sendSystemMessage(Component.translatable("vsch.message.toggle").append(Component.translatable("vsch." + blockMode.toString().toLowerCase())));
+		}
+
+		return InteractionResult.SUCCESS;
+
 	}
 
 	@Override

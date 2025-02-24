@@ -2,6 +2,7 @@ package net.jcm.vsch;
 
 import net.jcm.vsch.blocks.VSCHBlockz;
 import net.jcm.vsch.items.VSCHItems;
+import net.lointain.cosmos.init.CosmosModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,7 +21,9 @@ public class VSCHTab {
 				tabData.accept(VSCHBlockz.AIR_THRUSTER_BLOCK.get().asItem());
 				tabData.accept(VSCHBlockz.THRUSTER_BLOCK.get().asItem());
 				tabData.accept(VSCHBlockz.POWERFUL_THRUSTER_BLOCK.get().asItem());
+
 				tabData.accept(VSCHBlockz.DRAG_INDUCER_BLOCK.get().asItem());
+				tabData.accept(VSCHBlockz.GRAVITY_INDUCER_BLOCK.get().asItem());
 
 				tabData.accept(VSCHBlockz.MAGNET_BLOCK.get().asItem());
 				tabData.accept(VSCHItems.MAGNET_BOOT.get().asItem());
@@ -28,6 +31,10 @@ public class VSCHTab {
 				tabData.accept(VSCHBlockz.VIGORITE_CASING.get().asItem());
 				tabData.accept(VSCHItems.VIGORITE_ALLOY.get().asItem());
 				tabData.accept(VSCHItems.WRENCH.get().asItem());
+				tabData.accept(CosmosModItems.STEEL_INGOT.get().asItem());
+				tabData.accept(CosmosModItems.STEEL_PLATE.get().asItem());
+				tabData.accept(CosmosModItems.STEELENGINE.get().asItem());
+				tabData.accept(CosmosModItems.STEEL_SPACE_NODULE.get().asItem());
 
 			}).build());
 

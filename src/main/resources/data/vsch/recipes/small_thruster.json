@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "S": {
-      "item": "cosmos:steel_ingot"
+      "item": "cosmos:siliconchip"
     },
     "s": {
       "item": "cosmos:steel_plate"
@@ -14,12 +14,12 @@
 
   },
   "pattern": [
-    " s ",
-    " Vs",
-    "S  "
+    " V ",
+    "sSs",
+    " V "
   ],
   "result": {
-    "item": "vsch:vigorite_wrench"
+    "item": "vsch:air_thruster_block"
   },
   "show_notification": true
 }

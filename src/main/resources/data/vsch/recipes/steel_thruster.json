@@ -8,18 +8,20 @@
     "s": {
       "item": "cosmos:steel_plate"
     },
-    "V": {
-      "item": "vsch:vigorite_alloy"
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "g": {
+      "item": "minecraft:gunpowder"
     }
-
   },
   "pattern": [
-    " s ",
-    " Vs",
-    "S  "
+    "sss",
+    " R ",
+    "SgS"
   ],
   "result": {
-    "item": "vsch:vigorite_wrench"
+    "item": "cosmos:steelengine"
   },
   "show_notification": true
 }

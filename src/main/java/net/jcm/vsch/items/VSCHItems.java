@@ -1,5 +1,6 @@
 package net.jcm.vsch.items;
 
+import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import net.jcm.vsch.items.custom.MagnetBootItem;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.Item;
@@ -18,6 +19,9 @@ public class VSCHItems {
 
 	public static final RegistryObject<Item> VIGORITE_ALLOY = ITEMS.register("vigorite_alloy",
 			() -> new Item(new Item.Properties()));
+
+	public static final RegistryObject<Item> INCOMPLETE_LARGE_THRUSTER = ITEMS.register("incomplete_large_thruster",
+			() -> new SequencedAssemblyItem(new Item.Properties()));
 
 	public static final RegistryObject<Item> WRENCH = ITEMS.register("vigorite_wrench",
 			() -> new WrenchItem(new Item.Properties()));

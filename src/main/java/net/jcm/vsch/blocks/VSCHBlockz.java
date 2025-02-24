@@ -58,7 +58,6 @@ public class VSCHBlockz {
 					.strength(5f)
 					.noOcclusion()));
 
-
 	public static final RegistryObject<Block> VIGORITE_CASING = registerBlock("vigorite_casing",
 			() -> new CasingBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.COPPER)
 					.strength(5f)

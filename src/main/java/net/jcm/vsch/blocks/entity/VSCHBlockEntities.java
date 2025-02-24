@@ -1,5 +1,11 @@
 package net.jcm.vsch.blocks.entity;
 
+import com.simibubi.create.AllBlocks;
+import com.simibubi.create.Create;
+import com.simibubi.create.content.contraptions.bearing.BearingInstance;
+import com.simibubi.create.content.contraptions.bearing.BearingRenderer;
+import com.simibubi.create.content.contraptions.bearing.WindmillBearingBlockEntity;
+import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import net.jcm.vsch.VSCHMod;
 import net.jcm.vsch.blocks.VSCHBlockz;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -30,7 +36,7 @@ public class VSCHBlockEntities {
 	public static final RegistryObject<BlockEntityType<DragInducerBlockEntity>> DRAG_INDUCER_BLOCK_ENTITY =
 			BLOCK_ENTITIES.register("drag_inducer_block",
 					() -> BlockEntityType.Builder.of(DragInducerBlockEntity::new, VSCHBlockz.DRAG_INDUCER_BLOCK.get())
-					.build(null));
+							.build(null));
 
 	public static final RegistryObject<BlockEntityType<GravityInducerBlockEntity>> GRAVITY_INDUCER_BLOCK_ENTITY =
 			BLOCK_ENTITIES.register("gravity_inducer_block",

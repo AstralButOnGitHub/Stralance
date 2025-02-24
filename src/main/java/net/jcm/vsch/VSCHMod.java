@@ -11,6 +11,8 @@ import net.jcm.vsch.config.VSCHConfig;
 import net.jcm.vsch.entity.VSCHEntities;
 import net.jcm.vsch.event.GravityInducer;
 import net.jcm.vsch.items.VSCHItems;
+import net.jcm.vsch.items.VSCHSounds;
+import net.lointain.cosmos.init.CosmosModSounds;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -35,7 +37,9 @@ public class VSCHMod {
 	public VSCHMod() {
 		// Initialize logic here
 		IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
+		
 		//BLOCKS.register(modBus);
+		VSCHSounds.REGISTRY.register(modBus);
 		VSCHItems.register(modBus);
 		VSCHBlockz.register(modBus);
 		VSCHBlockEntities.register(modBus);

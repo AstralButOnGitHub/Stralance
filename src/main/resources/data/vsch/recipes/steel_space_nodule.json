@@ -1,0 +1,37 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "C": {
+      "item": "vsch:vigorite_casing"
+    },
+    "L": {
+      "item": "create:andesite_alloy"
+    },
+    "S": {
+      "item": "cosmos:steel_plate"
+    },
+    "B": {
+      "item": "cosmos:steel_block"
+    },
+    "s": {
+      "item": "cosmos:steelengine"
+    },
+    "R": {
+      "tag": "create:seats"
+    },
+    "T": {
+      "item": "minecraft:tinted_glass"
+    }
+  },
+  "pattern": [
+    "S S",
+    "CTC",
+    "LRL",
+    "CBC",
+    "s s"
+  ],
+  "result": {
+    "item": "cosmos:steel_space_nodule"
+  }
+}

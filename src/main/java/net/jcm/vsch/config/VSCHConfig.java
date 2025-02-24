@@ -27,6 +27,9 @@ public class VSCHConfig {
 
 	public static final ForgeConfigSpec.ConfigValue<Boolean> CANCEL_ASSEMBLY;
 
+	public static final ForgeConfigSpec.ConfigValue<Boolean> WRENCH_SOUND;
+	public static final ForgeConfigSpec.ConfigValue<Boolean> WRENCH_MESSAGE;
+
 	public static final ForgeConfigSpec.ConfigValue<Number> MAGNET_BOOT_DISTANCE;
 	public static final ForgeConfigSpec.ConfigValue<Number> MAGNET_BOOT_MAX_FORCE;
 	public static final ForgeConfigSpec.ConfigValue<Number> GRAVITY_DISTANCE;
@@ -49,6 +52,8 @@ public class VSCHConfig {
 		LIMIT_SPEED = BUILDER.comment("Limit speed thrusters can accelerate to. Recommended, as VS ships get funky at high speeds").define("limit_speed", true);
 		MAX_SPEED = BUILDER.comment("Max speed to limit to. Blocks/tick I think. Default is highly recommended").define("max_speed", 150);
 		CANCEL_ASSEMBLY = BUILDER.comment("Cancel multi-block assemblies when above world height. This is a temporary fix, but for now ships made above world height have issues with starlance.").define("cancel_assembly", true);
+		WRENCH_SOUND = BUILDER.comment("Plays a sound when used.").define("wrench_sound", false);
+		WRENCH_MESSAGE = BUILDER.comment("Sends a message to tell you what mode you've selected.").define("wrench_message", true);
 
 		MAGNET_BOOT_DISTANCE = BUILDER.comment("Distance (in blocks) at which magnet boots will pull you in").define("magnet_boot_distance", 6);
 		MAGNET_BOOT_MAX_FORCE = BUILDER.comment("Max acceleration magnet boots will apply at close distances to move the player downwards.").define("magnet_boot_max_force", 0.09);

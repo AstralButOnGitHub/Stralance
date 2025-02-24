@@ -45,9 +45,9 @@ public abstract class AbstractThrusterBlockEntity extends BlockEntity implements
 
 		this.typeString = typeStr;
 		this.thrusterData = new ThrusterData(
-			VectorConversionsMCKt.toJOMLD(state.getValue(DirectionalBlock.FACING).getNormal()),
-			0,
-			state.getValue(AbstractThrusterBlock.MODE));
+				VectorConversionsMCKt.toJOMLD(state.getValue(DirectionalBlock.FACING).getNormal()),
+				0,
+				state.getValue(AbstractThrusterBlock.MODE));
 	}
 
 	public String getTypeString() {
@@ -238,7 +238,7 @@ public abstract class AbstractThrusterBlockEntity extends BlockEntity implements
 				getThrusterParticleType(),
 				x, y, z,
 				speed.x, speed.y, speed.z
-				);
+		);
 
 		speed.mul(1.06);
 
@@ -247,7 +247,7 @@ public abstract class AbstractThrusterBlockEntity extends BlockEntity implements
 				getThrusterSmokeParticleType(),
 				x, y, z,
 				speed.x, speed.y, speed.z
-				);
+		);
 	}
 
 	private static float getPowerByRedstone(Level level, BlockPos pos) {

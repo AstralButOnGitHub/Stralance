@@ -2,15 +2,15 @@
   "type": "create:item_application",
   "ingredients": [
     {
-      "item": "vsch:vigorite_alloy_block"
+      "item": "cosmos:steel_block"
     },
     {
-      "item": "vsch:cerisite_plating"
+      "item": "vsch:vigorite_alloy"
     }
   ],
   "results": [
     {
-      "item": "vsch:cerisite_casing"
+      "item": "vsch:vigorite_casing"
     }
   ]
 }

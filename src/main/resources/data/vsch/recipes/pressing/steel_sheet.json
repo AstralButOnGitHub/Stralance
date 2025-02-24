@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "cosmos:steel_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "cosmos:steel_plate"
+    }
+  ]
+}

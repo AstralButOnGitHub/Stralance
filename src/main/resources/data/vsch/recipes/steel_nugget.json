@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "cosmos:steel_ingot"
+      "item": "cosmos:steel_ingot"
     }
   ],
   "result": {

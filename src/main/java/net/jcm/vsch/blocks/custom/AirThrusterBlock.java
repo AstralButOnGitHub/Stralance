@@ -22,7 +22,7 @@ import net.jcm.vsch.util.rot.RotShapes;
 
 public class AirThrusterBlock extends AbstractThrusterBlock<AirThrusterBlockEntity> {
 	//TODO: fix this bounding box
-	private static final RotShape SHAPE = RotShapes.box(3.0, 0.0, 3.0, 13.0, 8.0, 13.0);
+	private static final RotShape SHAPE = RotShapes.box(3.0, 0.0, 3.0, 13.0, 9.0, 13.0);
 
 	public AirThrusterBlock(Properties properties) {
 		super(properties, DirectionalShape.down(SHAPE));

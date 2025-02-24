@@ -3,17 +3,16 @@
   "heatRequirement": "heated",
   "ingredients": [
     {
-      "item": "cosmos:steel_ingot"
+      "item": "create:powdered_obsidian"
     },
     {
-      "item": "create:cinder_flour"
+      "item": "minecraft:iron_ingot"
     }
   ],
-
   "results": [
     {
-      "count": 2,
-      "item": "vsch:vigorite_alloy"
+      "count": 4,
+      "item": "cosmos:steel_ingot"
     }
   ]
 }

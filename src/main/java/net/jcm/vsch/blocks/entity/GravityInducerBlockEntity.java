@@ -19,7 +19,7 @@ import org.valkyrienskies.mod.common.util.VectorConversionsMCKt;
 import java.util.List;
 
 public class GravityInducerBlockEntity extends BlockEntity implements ParticleBlockEntity {
-	private static final double MIN_FORCE = 0.01;
+	private static final double MIN_FORCE = 0.1;
 	public GravityInducerBlockEntity(BlockPos pos, BlockState blockState) {
 		super(VSCHBlockEntities.GRAVITY_INDUCER_BLOCK_ENTITY.get(), pos, blockState);
 	}
@@ -32,6 +32,12 @@ public class GravityInducerBlockEntity extends BlockEntity implements ParticleBl
 		return VSCHConfig.GRAVITY_MAX_FORCE.get().doubleValue();
 	}
 
+	@Override
+	public void serverTick(Level level, BlockPos pos, BlockState state, ParticleBlockEntity be) {
+		if (level instanceof ServerLevel serverLevel) {
+			tickForce(serverLevel, pos, state);
+		}
+	}
 
 	@Override
 	public void tickForce(ServerLevel level, BlockPos pos, BlockState state) {
