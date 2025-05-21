@@ -36,6 +36,18 @@ public class VSCHTab {
 				tabData.accept(CosmosModItems.STEELENGINE.get().asItem());
 				tabData.accept(CosmosModItems.STEEL_SPACE_NODULE.get().asItem());
 
+
+
+
+
+
+
+
+
+
+				tabData.accept(CosmosModItems.SULPHURIC_ACID_BUCKET.get().asItem());
+				tabData.accept(VSCHItems.SULPHURIC_ACID_ROLL.get().asItem());
+
 			}).build());
 
 	public static void register(IEventBus eventBus) {

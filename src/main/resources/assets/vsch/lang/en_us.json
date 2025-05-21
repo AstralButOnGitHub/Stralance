@@ -14,6 +14,7 @@
 	"block.vsch.drag_inducer_block": "Drag Inducer",
 	"item.vsch.vigorite_wrench": "Vigorite Wrench",
 	"item.vsch.magnet_boot": "Magnet Boots",
+	"item.vsch.sulphuric_acid_roll": "Sulphuric Acid Roll",
 
 	"config.jade.plugin_vsch.thruster_component_config": "Thruster Mode Details",
 	"vsch.ponder.thrusters.header": "Thrusters",
@@ -29,5 +30,29 @@
 	"vsch.ponder.drag_inducer.header": "Drag inducer",
 	"vsch.ponder.drag_inducer.text_1": "Sometimes, it can be hard to slow down in space",
 	"vsch.ponder.drag_inducer.text_2": "This is where the drag inducer comes in",
-	"vsch.ponder.drag_inducer.text_3": "When powered with redstone, the drag inducer will try to slow you down in all directions"
+	"vsch.ponder.drag_inducer.text_3": "When powered with redstone, the drag inducer will try to slow you down in all directions",
+
+
+
+
+	"advancement.vsch.steel_ingot": "Steel-ing your Heart",
+	"advancement.vsch.steel_ingot.desc": "Create Steel Ingots by Mixing Powdered Obsidian and Iron ingots in your Blaze-heated Mechanical Mixer",
+
+	"advancement.vsch.vigorite_alloy": "Out of This World",
+	"advancement.vsch.vigorite_alloy.desc": "Create Vigorite Alloys by Mixing Cinder Flour and Steel Ingots in your Blaze-heated Mechanical Mixer",
+
+	"advancement.vsch.drag_inducer": "This is such a DRAG (get it?)",
+	"advancement.vsch.drag_inducer.desc": "This is such a DRAG (get it?)",
+
+	"advancement.vsch.air_thruster": "To Infinity and Beyond",
+	"advancement.vsch.air_thruster.desc": "Travel to the Moon with a Space Nodule to obtain Silicon",
+
+	"advancement.vsch.thruster": "Thruster? I Barely Know 'Er!",
+	"advancement.vsch.thruster.desc": "Upgrade the Small Thruster to increase your Thrusters output",
+
+	"advancement.vsch.powerful_thruster": "Where No Man has Gone Before",
+	"advancement.vsch.powerful_thruster.desc": "Craft 4 Medium Thrusters and Combine them to Obtain the Final Thruster",
+
+	"advancement.vsch.sulphuric_acid_roll": "Only safe if eaten in a Bath-Tub",
+	"advancement.vsch.sulphuric_acid_roll.desc": "Not too Great for your Health...\n§7(Hidden Advancement)"
 }

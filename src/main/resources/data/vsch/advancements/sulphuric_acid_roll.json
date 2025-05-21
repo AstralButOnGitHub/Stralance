@@ -1,0 +1,37 @@
+{
+  "parent": "vsch:large_thruster",
+  "criteria": {
+    "apple": {
+      "conditions": {
+        "item": {
+          "items": [
+            "vsch:sulphuric_acid_roll"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "color": "#DBA213",
+      "translate": "advancement.vsch.sulphuric_acid_roll.desc"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "vsch:sulphuric_acid_roll"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.vsch.sulphuric_acid_roll"
+    }
+  },
+  "requirements": [
+    [
+      "apple"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "vsch:thruster_block"
+    },
+    "s": {
+      "item": "cosmos:steel_plate"
+    },
+    "V": {
+      "item": "vsch:vigorite_alloy"
+    }
+
+  },
+  "pattern": [
+    "VsV",
+    "sSs",
+    "SSS"
+  ],
+  "result": {
+    "item": "vsch:powerful_thruster_block"
+  },
+  "show_notification": true
+}
